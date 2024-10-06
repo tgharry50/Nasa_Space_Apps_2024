@@ -1,0 +1,15 @@
+zboża
+zboża podstawowe z mieszankami zbożowymi
+zboża podstawowe 
+pszenice ogółem
+pszenice ozima
+pszenice jara
+żyta
+jęczmienia ogółem
+jęczmienia ozimego
+jęczmienia jarego
+owsa
+pszenżyta ogółem
+pszenżyta ozimego
+pszenżyta jarego
+miesz

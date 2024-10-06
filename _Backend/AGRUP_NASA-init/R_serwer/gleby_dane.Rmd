@@ -1,0 +1,152 @@
+---
+title: "gleby_dane"
+author: "Rafal Bazan"
+date: "2024-10-05"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+project_path = "C:/Users/rafal/ARGUP/R_serwer"
+data = paste(project_path,"/Data",sep="")
+setwd(project_path)
+
+knitr::opts_chunk$set(root= project_path)
+```
+
+```{r }
+library(readxl)
+library(stringi)
+library(readr)
+library(jsonlite)
+
+my_data = data.frame()
+
+
+index = function(numer_index){
+  
+  for(numer in 1:17){
+  publikacja_2022_2 <- read_excel("C:/Users/rafal/ARGUP/R_serwer/publikacja_2022_2.xlsx", 
+      sheet = paste("Tabl. ",numer, sep="") )
+  
+  colnames(publikacja_2022_2)[1]
+  dane = stri_match_all_regex(colnames(publikacja_2022_2)[1],
+     '\\w+')[[1]]
+  my_header = paste(dane[3:length(dane),1], collapse = " ")
+  
+  df <- read_excel("C:/Users/rafal/ARGUP/R_serwer/publikacja_2022_2.xlsx", 
+      sheet = paste("Tabl. ",numer, sep=""), col_names = c(my_header,"Powierzchnia w ha","Plony z 1 ha w dt","Zbiory w dt","Powierzchnia","Plony","Zbiory"),skip = 4)
+  df
+  write.csv(df, file=paste(data,paste("/df",numer,".csv",sep=""),sep=""))
+  df1 <- read_csv(paste("Data/df",numer,".csv",sep=""),show_col_types = FALSE)[,-1]
+  
+  
+  cn = colnames(df1[numer_index,1])
+  my_df = df1[numer_index,-1]
+  new_data = data.frame(row.names = cn,my_df)
+  my_data = rbind(my_data,new_data)
+  
+  
+  
+  
+  }
+  write.csv(my_data, file=paste(data,paste("/json/df",numer,".csv",sep=""),sep=""))
+  csv_data <- read.csv(paste(data,paste("/json/df",numer,".csv",sep=""),sep=""), stringsAsFactors = FALSE)
+  json_data <- toJSON(csv_data, pretty = TRUE)
+  write(json_data, paste(data,paste("/json/df",numer,numer_index,".json",sep=""),sep=""))
+  my_data 
+}
+for(i in 1:17){
+  index(i)
+}
+```
+
+```{r }
+project_path = "C:/Users/rafal/ARGUP/R_serwer/Data_wiz/my_xlsx"
+data = paste(project_path,"/Data",sep="")
+setwd(project_path)
+library(readxl)
+library(stringi)
+library(readr)
+library(jsonlite)
+
+my_data = data.frame()
+
+
+index = function(numer_index){
+  
+  for(numer in 1:17){
+  publikacja_2022_2 <- read_excel("C:/Users/rafal/ARGUP/R_serwer/Data_wiz/my_xlsx/publikacja_2022_2.xlsx", 
+      sheet = paste("Tabl. ",numer, sep="") )
+  
+  colnames(publikacja_2022_2)[1]
+  dane = stri_match_all_regex(colnames(publikacja_2022_2)[1],
+     '\\w+')[[1]]
+  my_header = paste(dane[3:length(dane),1], collapse = " ")
+  
+  df <- read_excel("C:/Users/rafal/ARGUP/R_serwer/Data_wiz/my_xlsx/publikacja_2022_2.xlsx", 
+      sheet = paste("Tabl. ",numer, sep=""), col_names = c(my_header,"Powierzchnia w ha","Plony z 1 ha w dt","Zbiory w dt","Powierzchnia","Plony","Zbiory"),skip = 4)
+  df
+  write.csv(df, file=paste(data,paste("/df",numer,".csv",sep=""),sep=""))
+  df1 <- read_csv(paste("Data/df",numer,".csv",sep=""),show_col_types = FALSE)[,-1]
+  
+  
+  cn = colnames(df1[numer_index,1])
+  my_df = df1[numer_index,-1]
+  new_data = data.frame(row.names = cn,my_df)
+  my_data = rbind(my_data,new_data)
+  
+  
+  
+  
+  }
+  write.csv(my_data, file=paste(data,paste("/json/df",numer,".csv",sep=""),sep=""))
+  csv_data <- read.csv(paste(data,paste("/json/df",numer,".csv",sep=""),sep=""), stringsAsFactors = FALSE)
+  json_data <- toJSON(csv_data, pretty = TRUE)
+  write(json_data, paste(data,paste("/json/df",numer,numer_index,".json",sep=""),sep=""))
+  my_data 
+}
+for(i in 1:1){
+  index(i)
+}
+```
+```{r}
+# Wczytaj bibliotekę
+library(jsonlite)
+
+# Wczytaj plik CSV do ramki danych
+csv_data <- read.csv("C:/Users/rafal/ARGUP/R_serwer/Data/df1.csv", stringsAsFactors = FALSE)
+
+# Konwertuj ramkę danych na format JSON
+json_data <- toJSON(csv_data, pretty = TRUE)
+
+# Zapisz dane JSON do pliku
+write(json_data, "C:/Users/rafal/ARGUP/R_serwer/Data/df1.json")
+
+# Wyświetl dane w formacie JSON (opcjonalnie)
+cat(json_data)
+
+```
+
+```{r include=FALSE,  eval=FALSE}
+publikacja_2022_2 <- read_excel("C:/Users/rafal/ARGUP/R_serwer/publikacja_2022_2.xlsx", 
+    sheet = "Tabl. 1", col_names = c("","Powierzchnia w ha","Plony z 1 ha w dt","Zbiory w dt","Powierzchnia","Plony","Zbiory"),skip = 4)
+df1 = data.frame(publikacja_2022_2)
+PolskaDf = df1[1,]
+df1 = rbind(df1,PolskaDf)
+df1 = df1[-1,]
+df1 = data.frame(row.names = NULL,df1)
+df1[17,1] = "Łącznie"
+View(df1)
+
+write.csv(df1, paste(dane,"df1.csv",sep=""))
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.

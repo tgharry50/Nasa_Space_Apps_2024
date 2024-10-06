@@ -1,0 +1,155 @@
+[
+  {
+    "X": "POWIERZCHNIA PLONY I ZBIORY ZBÓŻ",
+    "Powierzchnia.w.ha": 971641,
+    "Plony.z.1.ha.w.dt": 52.3,
+    "Zbiory.w.dt": 50785721,
+    "Powierzchnia": 98.7,
+    "Plony": 103.4,
+    "Zbiory": 102
+  },
+  {
+    "X": "POWIERZCHNIA PLONY I ZBIORY ZBÓŻ PODSTAWOWYCH Z MIESZANKAMI ZBOŻOWYMI",
+    "Powierzchnia.w.ha": 760342,
+    "Plony.z.1.ha.w.dt": 48,
+    "Zbiory.w.dt": 36508519,
+    "Powierzchnia": 95.7,
+    "Plony": 105.7,
+    "Zbiory": 101.2
+  },
+  {
+    "X": "POWIERZCHNIA PLONY I ZBIORY ZBÓŻ PODSTAWOWYCH",
+    "Powierzchnia.w.ha": 723105,
+    "Plony.z.1.ha.w.dt": 48.5,
+    "Zbiory.w.dt": 35091457,
+    "Powierzchnia": 99.4,
+    "Plony": 105,
+    "Zbiory": 104.5
+  },
+  {
+    "X": "POWIERZCHNIA PLONY I ZBIORY PSZENICY OGÓŁEM",
+    "Powierzchnia.w.ha": 248626,
+    "Plony.z.1.ha.w.dt": 55.3,
+    "Zbiory.w.dt": 13750712,
+    "Powierzchnia": 107.7,
+    "Plony": 103.4,
+    "Zbiory": 111.3
+  },
+  {
+    "X": "POWIERZCHNIA PLONY I ZBIORY PSZENICY OZIMEJ",
+    "Powierzchnia.w.ha": 237277,
+    "Plony.z.1.ha.w.dt": 56.1,
+    "Zbiory.w.dt": 13301292,
+    "Powierzchnia": 108.1,
+    "Plony": 103.3,
+    "Zbiory": 111.6
+  },
+  {
+    "X": "POWIERZCHNIA PLONY I ZBIORY PSZENICY JAREJ",
+    "Powierzchnia.w.ha": 11349,
+    "Plony.z.1.ha.w.dt": 39.6,
+    "Zbiory.w.dt": 449420,
+    "Powierzchnia": 99.8,
+    "Plony": 102.9,
+    "Zbiory": 102.6
+  },
+  {
+    "X": "POWIERZCHNIA PLONY I ZBIORY ŻYTA",
+    "Powierzchnia.w.ha": 125515,
+    "Plony.z.1.ha.w.dt": 38.1,
+    "Zbiory.w.dt": 4787153,
+    "Powierzchnia": 94.6,
+    "Plony": 109.5,
+    "Zbiory": 103.7
+  },
+  {
+    "X": "POWIERZCHNIA PLONY I ZBIORY JĘCZMIENIA OGÓŁEM",
+    "Powierzchnia.w.ha": 107646,
+    "Plony.z.1.ha.w.dt": 48.6,
+    "Zbiory.w.dt": 5236737,
+    "Powierzchnia": 92,
+    "Plony": 105.9,
+    "Zbiory": 97.4
+  },
+  {
+    "X": "POWIERZCHNIA PLONY I ZBIORY JĘCZMIENIA OZIMEGO",
+    "Powierzchnia.w.ha": 67637,
+    "Plony.z.1.ha.w.dt": 54.3,
+    "Zbiory.w.dt": 3673294,
+    "Powierzchnia": 98,
+    "Plony": 105.2,
+    "Zbiory": 103.2
+  },
+  {
+    "X": "POWIERZCHNIA PLONY I ZBIORY JĘCZMIENIA JAREGO",
+    "Powierzchnia.w.ha": 40009,
+    "Plony.z.1.ha.w.dt": 39.1,
+    "Zbiory.w.dt": 1563443,
+    "Powierzchnia": 83.3,
+    "Plony": 103.4,
+    "Zbiory": 86.1
+  },
+  {
+    "X": "POWIERZCHNIA PLONY I ZBIORY OWSA",
+    "Powierzchnia.w.ha": 37170,
+    "Plony.z.1.ha.w.dt": 34.6,
+    "Zbiory.w.dt": 1285605,
+    "Powierzchnia": 89.4,
+    "Plony": 107.5,
+    "Zbiory": 96.1
+  },
+  {
+    "X": "POWIERZCHNIA PLONY I ZBIORY PSZENŻYTA OGÓŁEM",
+    "Powierzchnia.w.ha": 204147,
+    "Plony.z.1.ha.w.dt": 49.1,
+    "Zbiory.w.dt": 10031250,
+    "Powierzchnia": 99.5,
+    "Plony": 101.9,
+    "Zbiory": 101.5
+  },
+  {
+    "X": "POWIERZCHNIA PLONY I ZBIORY PSZENŻYTA OZIMEGO",
+    "Powierzchnia.w.ha": 198191,
+    "Plony.z.1.ha.w.dt": 49.5,
+    "Zbiory.w.dt": 9813087,
+    "Powierzchnia": 99.3,
+    "Plony": 102.1,
+    "Zbiory": 101.4
+  },
+  {
+    "X": "POWIERZCHNIA PLONY I ZBIORY PSZENŻYTA JAREGO",
+    "Powierzchnia.w.ha": 5956,
+    "Plony.z.1.ha.w.dt": 36.6,
+    "Zbiory.w.dt": 218163,
+    "Powierzchnia": 106,
+    "Plony": 100,
+    "Zbiory": 106.1
+  },
+  {
+    "X": "POWIERZCHNIA PLONY I ZBIORY MIESZANEK ZBOŻOWYCH OGÓŁEM",
+    "Powierzchnia.w.ha": 37237,
+    "Plony.z.1.ha.w.dt": 38.1,
+    "Zbiory.w.dt": 1417062,
+    "Powierzchnia": 55,
+    "Plony": 102.4,
+    "Zbiory": 56.3
+  },
+  {
+    "X": "POWIERZCHNIA PLONY I ZBIORY MIESZANEK ZBOŻOWYCH OZIMYCH",
+    "Powierzchnia.w.ha": 8857,
+    "Plony.z.1.ha.w.dt": 45.1,
+    "Zbiory.w.dt": 399784,
+    "Powierzchnia": 52.3,
+    "Plony": 106.4,
+    "Zbiory": 55.7
+  },
+  {
+    "X": "POWIERZCHNIA PLONY I ZBIORY MIESZANEK ZBOŻOWYCH JARYCH",
+    "Powierzchnia.w.ha": 28380,
+    "Plony.z.1.ha.w.dt": 35.8,
+    "Zbiory.w.dt": 1017278,
+    "Powierzchnia": 55.9,
+    "Plony": 100.8,
+    "Zbiory": 56.5
+  }
+]
