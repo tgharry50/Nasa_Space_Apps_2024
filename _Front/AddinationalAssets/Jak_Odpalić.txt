@@ -1,0 +1,8 @@
+Wejść w folder:
+..\Nasa_Space_Apps_2024\_Front\main
+Wpisać npm i
+Poczekać na zakończenie instalacji
+Wpisać npm run dev
+Jeśli nie wyskoczą żadne błędy, serwer działa
+Aby share'ować na sieci:
+npm run dev -- --host

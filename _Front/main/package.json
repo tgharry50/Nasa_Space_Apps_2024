@@ -12,10 +12,12 @@
     "@mdi/font": "7.4.47",
     "chart.js": "^4.4.4",
     "core-js": "^3.37.1",
+    "dragula": "^3.7.3",
     "leaflet": "^1.9.4",
     "roboto-fontface": "*",
     "vue": "^3.4.31",
     "vue-chartjs": "^5.3.1",
+    "vuedraggable": "^4.1.0",
     "vuetify": "^3.6.11"
   },
   "devDependencies": {

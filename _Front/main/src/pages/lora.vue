@@ -21,7 +21,6 @@ async function FetchLora() {
     setInterval(async () => {
         try {
             await axios.post("http://192.168.0.3:80/sensors").then(res => {
-                console.log(res.data)
                 if (air.value.length < 8) {
                     air.value.push((res.data.air).toFixed(2));
                     dirt.value.push((res.data.dirt).toFixed(2));
@@ -48,9 +47,9 @@ async function FetchLora() {
         } catch (err) {
             console.log(err)
         }
-    }, 5000);
+    }, 10000);
 }
-//onMounted(() => FetchLora())
+onMounted(() => FetchLora())
 </script>
 
 <template>

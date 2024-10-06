@@ -7,7 +7,6 @@ let data = ref();
 let search = ref()
 async function FetchDraft(value) {
     await axios.get(`http://192.168.247.64:8000/api/sendjson2/${value}`).then(res => {
-        console.log(res.data)
         data.value = res.data
     })
 }
@@ -40,7 +39,7 @@ watch(search, async (value) => {
             <v-row>
                 <v-col>
                     <v-data-table :items="data" item-key="X" :headers="[
-                        { title: 'Zbiór danych o', value: 'X', key: 'X', align: 'start' },
+                        { title: 'Zbiór danych', value: 'X', key: 'X', align: 'start' },
                         { title: 'Plony', value: 'Plony', key: 'Plony', align: 'start' },
                         { title: 'Plony z hektara ziemi', value: 'Plony.z.1.ha.w.dt', key: 'Plony.z.1.ha.w.dt', align: 'start' },
                         { title: 'Powierzchnia', value: 'Powierzchnia', key: 'Powierzchnia', align: 'start' },
