@@ -20,6 +20,12 @@ const router = useRouter();
                 <v-list-item @click="router.push('/lora')" title="Informacja z czujników">
                     <template v-slot:prepend><v-icon icon="mdi mdi-information"></v-icon></template>
                 </v-list-item>
+                <v-list-item @click="router.push('/sensor')" title="Czujniki">
+                    <template v-slot:prepend><v-icon icon="mdi mdi-access-point-network"></v-icon></template>
+                </v-list-item>
+                <v-list-item @click="router.push('/alerts')" title="Alerty">
+                    <template v-slot:prepend><v-icon icon="mdi mdi-alert-octagram-outline"></v-icon></template>
+                </v-list-item>
             </v-list-item>
         </v-list>
     </v-navigation-drawer>

@@ -1,8 +1,8 @@
 <template>
   <v-app>
+    <AppHeader />
+    <AppSideBar />
     <v-main>
-      <AppHeader />
-      <AppSideBar />
       <router-view />
     </v-main>
     <AppFooter />

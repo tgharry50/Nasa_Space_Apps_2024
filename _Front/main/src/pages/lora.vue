@@ -48,7 +48,7 @@ async function FetchLora() {
         } catch (err) {
             console.log(err)
         }
-    }, 5000);
+    }, 3000);
 }
 onMounted(() => FetchLora())
 </script>
