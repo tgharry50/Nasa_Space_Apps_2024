@@ -1,3 +1,4 @@
+![Component 1](https://github.com/user-attachments/assets/5aeb39b2-f4d2-46fa-83c1-c947a41abe63)
 IoT-Based Distributed Farming data gathering system Using LoRaWAN and ESP32
 
 Attention!!!! the entire project was implemented in the Hackathon "2024 NASA Space Apps Challenge" in Stalowa Wola in the span of 24h
