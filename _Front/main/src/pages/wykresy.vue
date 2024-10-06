@@ -6,7 +6,7 @@ const router = useRouter();
 let data = ref();
 let search = ref()
 async function FetchDraft(value) {
-    await axios.get(`http://192.168.247.64:8000/api/sendjson2/${value}`).then(res => {
+    await axios.get(`http://192.168.0.6:8000/api/sendjson2/${value}`).then(res => {
         data.value = res.data
     })
 }

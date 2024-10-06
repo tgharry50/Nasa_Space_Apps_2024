@@ -4,7 +4,7 @@
             <v-row>
                 <v-col>
                     <p>
-                        FarmSoothe
+                        Agrap
                     </p>
                 </v-col>
             </v-row>
