@@ -4,7 +4,7 @@
             <v-row>
                 <v-col>
                     <p>
-                        Agrap
+                        AGRUP
                     </p>
                 </v-col>
             </v-row>

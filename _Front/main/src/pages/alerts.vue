@@ -1,5 +1,19 @@
 <script setup>
+import { VNumberInput } from 'vuetify/labs/VNumberInput'
 import { ref } from 'vue';
+import axios from 'axios';
+let phone = ref();
+let formValid = ref(false)
+async function Send() {
+    let form = new FormData();
+    form.append("number", phone.value);
+    await axios.post("http://192.168.0.6:8000/api/send", { form }).then(res => {
+        console.log(res)
+    })
+}
+const Rules = {
+    Required: v => !!v || 'Pole nie może być puste'
+}
 </script>
 <template>
     <v-layout>
@@ -11,38 +25,15 @@ import { ref } from 'vue';
             </v-row>
             <v-row>
                 <v-col class="w-100">
-                    <v-card max-width="344">
-                        <v-img height="200px" src="https://cdn.vuetifyjs.com/images/cards/sunshine.jpg" cover></v-img>
+                    <v-card max-width="344 text-center">
 
-                        <v-card-title>
-                            Top western road trips
-                        </v-card-title>
-
-                        <v-card-subtitle>
-                            1,000 miles of wonder
-                        </v-card-subtitle>
-
-                        <v-card-actions>
-                            <v-btn color="orange-lighten-2" text="Explore"></v-btn>
-
-                            <v-spacer></v-spacer>
-
-                            <v-btn :icon="show ? 'mdi-chevron-up' : 'mdi-chevron-down'" @click="show = !show"></v-btn>
-                        </v-card-actions>
-
-                        <v-expand-transition>
-                            <div v-show="show">
-                                <v-divider></v-divider>
-
-                                <v-card-text>
-                                    I'm a thing. But, like most politicians, he promised more than he could deliver. You
-                                    won't have time for sleeping, soldier, not with all the bed making you'll be doing.
-                                    Then
-                                    we'll go with that data file! Hey, you add a one and two zeros to that or we walk!
-                                    You're going to do his laundry? I've got to find a way to escape.
-                                </v-card-text>
-                            </div>
-                        </v-expand-transition>
+                        <v-sheet class="mx-auto" width="300">
+                            <v-form v-model="formValid">
+                                <v-number-input :rules="[Rules.Required]" label="Wpisz numer telefonu"
+                                    v-model="phone"></v-number-input>
+                                <v-btn :disabled="!formValid" class="mt-3 mb-5" @click="Send()">Wyślij</v-btn>
+                            </v-form>
+                        </v-sheet>
                     </v-card>
 
                 </v-col>
