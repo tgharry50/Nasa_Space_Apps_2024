@@ -1,4 +1,5 @@
-![Component 1](https://github.com/user-attachments/assets/5aeb39b2-f4d2-46fa-83c1-c947a41abe63)
+![image](https://github.com/user-attachments/assets/7b86bd9d-79ee-497a-aafa-9692fe817ccb)
+
 IoT-Based Distributed Farming data gathering system Using LoRa and ESP32
 
 Attention!!!! the entire project was implemented in the Hackathon "2024 NASA Space Apps Challenge" in Stalowa Wola in the span of 24h
